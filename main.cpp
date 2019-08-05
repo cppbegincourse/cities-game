@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 using namespace std;
 
 int main()
@@ -18,7 +17,7 @@ int main()
         char inputLastChar = city.back();
 
         continueGame = false;
-        for(vector<string>::const_iterator currCity = cities.begin(); currCity != cities.end(); ++currCity) {
+        for(auto currCity = cities.begin(); currCity != cities.end(); ++currCity) {
             char fChar = tolower((*currCity).at(0));
 
             if (fChar == inputLastChar) {
